@@ -290,4 +290,5 @@ code {
   background-color: var(--bg-color-dark);
   padding: 2px;
   font-size: 105%;
+  border-radius: 2px; 
 }
