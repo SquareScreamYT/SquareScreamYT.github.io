@@ -283,3 +283,11 @@ img {
   border-radius: 5px;
   max-width: 150px;
 }
+
+code {
+  font-family: monospace,Consolas,"courier new";
+  color: var(--text-color);
+  background-color: var(--bg-color-dark);
+  padding: 2px;
+  font-size: 105%;
+}
