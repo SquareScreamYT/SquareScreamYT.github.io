@@ -289,6 +289,6 @@ code {
   color: var(--text-color);
   background-color: var(--bg-color-dark);
   padding: 2px;
-  font-size: 105%;
+  font-size: 80%;
   border-radius: 2px; 
 }
