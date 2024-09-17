@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SquareScreamYT - Home</title>
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <html lang="en" xml:lang="en" xmlns= "http://www.w3.org/1999/xhtml">
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+  <!-- https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#f8fafc">
+  <meta name="theme-color" content="#ffffff">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lato:wght@300&family=Noto+Color+Emoji:wght@400&display=swap');
+    @font-face {
+      font-family: 'SF Pro Rounded';
+      font-style: normal;
+      font-weight: 400;
+      src: url("https://raw.githubusercontent.com/SquareScreamYT/sf-fonts/master/SF-Pro-Rounded-Light.otf") format("opentype");
+    }
+
+  	html {
+      scroll-snap-type: y mandatory;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Nunito", "SF Pro Rounded", sans-serif;
+      margin: 0;
+      overflow-y: scroll;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50%;
+      text-decoration: none;
+      color: white;
+      transition: all 0.3s ease-in-out;
+      &:hover,
+      &:focus,
+      &:active {
+        color: #f1e8d9;
+      }
+    }
+
+    section {
+      padding: 1em;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      scroll-snap-align: center;
+      scroll-snap-stop: always;
+
+      &:nth-of-type(1) {
+        background: #c3fae8;
+      }
+      &:nth-of-type(2) {
+        background: #ffc9c9;
+      }
+      &:nth-of-type(3) {
+        background: #99e9f2;
+      }
+      &:nth-of-type(4) {
+        background: #eebefa;
+      }
+      &:nth-of-type(5) {
+        background: #ffec99;
+      }
+      &:nth-of-type(6) {
+        background: #d8f5a2;
+      }
+      &:nth-of-type(7) {
+        background: #99e9f2;
+      }
+    }
+
+    h1 {
+      font-size: 4rem;
+      color: white;
+      text-align: center;
+      margin: 1rem 0;
+    }
+    .title {
+      color: #20c997;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: #38d9a9;
+      text-shadow: 0 0 20px #e7f5ff;
+      text-align: center;
+    }
+
+    p {
+      color: #424242;
+      line-height: 1.8rem;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <article>
+	  <section>
+      <h1 class="title">sqec</h1>
+      <h2 class="fade-in show-once">professional yapper and multitasker</h2>
+    </section>
+    <section>
+      <h1>YouTube</h1>
+      <a href="https://youtube.com/@sqec"><img class="fade-in" src="youtube_icon.svg" alt="youtube icon"></a>
+    </section>
+    <section>
+      <h1>Sandboxels Mods</h1>
+      <a href="https://sandboxels.R74n.com/mod-list"><img class="scaleUp" src="sandboxels_icon.svg" alt="sandboxels icon"></a>
+    </section>
+    <section>
+      <h1>Viossa</h1>
+      <a href="/viossa/stuff"><img class="flip" src="viossa_icon.svg" alt="viossa icon"></a>
+    </section>
+    <!---
+    <section>
+      <h1 class="slide-up"><a href="https://scrollrevealjs.org">Animations by ScrollReveal.js</a></h1>
+    </section>
+    -->
+    <section>
+      <h1 class="scaleDown"><a href="https://github.com/SquareScreamYT">Made by sqec</a></h1>
+    </section>
+    <section>
+      <h1 class="spinIn"><a href="/stuff">Other Stuff</a></h1>
+    </section>
+  </article>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+  	ScrollReveal({ reset: true });
+
+    ScrollReveal().reveal(".show-once", {
+      reset: false
+    });
+
+    ScrollReveal().reveal(".title", {
+      duration: 2000,
+      origin: "top",
+      distance: "400px",
+      easing: "cubic-bezier(0.5, 0, 0, 1)",
+      rotate: {
+        x: 20,
+        z: -10
+      }
+    });
+
+    ScrollReveal().reveal(".fade-in", {
+      duration: 2000,
+      move: 0
+    });
+
+    ScrollReveal().reveal(".scaleUp", {
+      duration: 2000,
+      scale: 0.85
+    });
+
+    ScrollReveal().reveal(".scaleDown", {
+      duration: 2000,
+      scale: 1.15
+    });
+    
+    ScrollReveal().reveal(".spinIn", {
+      duration: 2000,
+      scale: 0.85,
+      rotate: {
+        x: 20,
+        z: 20
+      }
+    });
+
+    ScrollReveal().reveal(".flip", {
+      delay: 500,
+      duration: 2000,
+      rotate: {
+        x: 20,
+        z: 20
+      }
+    });
+
+    ScrollReveal().reveal(".slide-right", {
+      duration: 2000,
+      origin: "left",
+      distance: "300px",
+      easing: "ease-in-out"
+    });
+
+    ScrollReveal().reveal(".slide-up", {
+      duration: 2000,
+      origin: "bottom",
+      distance: "100px",
+      easing: "cubic-bezier(.37,.01,.74,1)",
+      opacity: 0.3,
+      scale: 0.5
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest'
+          });
+        }
+      });
+    });
+
+    // Custom smooth scroll
+    let isScrolling = false;
+    window.addEventListener('wheel', function(e) {
+      if (!isScrolling) {
+        isScrolling = true;
+        const direction = e.deltaY > 0 ? 1 : -1;
+        const currentSection = document.elementFromPoint(window.innerWidth / 2, window.innerHeight / 2).closest('section');
+        const targetSection = direction === 1 ? currentSection.nextElementSibling : currentSection.previousElementSibling;
+
+        if (targetSection) {
+          targetSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest'
+          });
+        }
+
+        setTimeout(() => {
+          isScrolling = false;
+        }, 1000); // Adjust this value to control scroll speed (higher value = slower scroll)
+      }
+      e.preventDefault();
+    }, { passive: false });
+    
+  </script>
+</body>
+</html>
