@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bebezwe</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap');
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #FE94F6;
+    }
+    .spinning-image-container {
+      perspective: 1000px;
+    }
+    .spinning-image {
+      width: 30vh;
+      height: 30vh;
+      animation: spin3d 5s linear infinite;
+    }
+    @keyframes spin3d {
+      0% { transform: rotateY(0deg) rotateX(0deg); }
+      100% { transform: rotateY(360deg) rotateX(360deg); }
+    }
+    h1 {
+      font-size: 5vh;
+      text-align: center;
+      font-family: 'Nunito', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="spinning-image-container">
+    <h1>bebezwe</h1>
+    <img src="https://cdn.discordapp.com/emojis/1286716309312110693.webp?size=128&quality=lossless" alt="spinny bebezwe" class="spinning-image">
+  </div>
+</body>
+</html>
