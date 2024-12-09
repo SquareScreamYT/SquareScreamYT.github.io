@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pashun baka</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+        body {
+            font-family: Nunito, Arial, sans-serif;
+            color: #333;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background-color: #eee;
+        }
+
+        .container {
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            padding: 20px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="dynamic-text">
+        
+    </div>
+
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        function updateText() {
+            const person = getQueryParam('pashun');
+            const thing = getQueryParam('ting');
+            
+            if (person && thing) {
+                const dynamicText = `${person} baka grun ${thing}`;
+                document.getElementById('dynamic-text').textContent = dynamicText;
+                document.title = `${person} baka`;
+            } else {
+                const message = 'pashun baka';
+                document.getElementById('dynamic-text').textContent = message;
+                document.title = 'pashun baka';
+            }
+        }
+
+        updateText();
+    </script>
+
+</body>
+</html>
