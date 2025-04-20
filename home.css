@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lato:wght@300&family=Noto+Color+Emoji:wght@400&display=swap');
+
+@font-face {
+  font-family: 'SF Pro Rounded';
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://raw.githubusercontent.com/SquareScreamYT/sf-fonts/master/SF-Pro-Rounded-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'sqbb';
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/sqbb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'sqpixels';
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/sqpixels4x6.TTF") format("truetype");
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito", "SF Pro Rounded", sans-serif;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  text-decoration: none;
+  color: #f8fafc;
+  transition: all 0.3s ease-in-out;
+  &:hover,
+  &:focus,
+  &:active {
+    color: #f3f0ff;
+  }
+}
+
+section {
+  padding: 1em;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+
+  &:nth-of-type(1) {
+    background: #c3fae8;
+    background-image: url("home_maps.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &:nth-of-type(2) {
+    background: #ffc9c9;
+    background-image: url("home_fonts.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &:nth-of-type(3) {
+    background: #99e9f2;
+  }
+  &:nth-of-type(4) {
+    background: #eebefa;
+  }
+  &:nth-of-type(5) {
+    background: #ffec99;
+  }
+  &:nth-of-type(6) {
+    background: #d8f5a2;
+  }
+  &:nth-of-type(7) {
+    background: #99e9f2;
+  }
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  margin: 1rem 0;
+}
+.title {
+  color: #0f172a;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #0f172a;
+  background-color: #f8fafcaa;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #0f172a;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+p {
+  color: #424242;
+  line-height: 1.8rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.font-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.font-card {
+  background-color: #f8fafc;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.font-card:hover {
+  transform: translateY(-5px);
+}
+
+.font-sample {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem 0;
+  line-height: 1.6;
+  color: #0f172a;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border: 2px solid #cbd5e1;
+  border-radius: 10px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sqbb-font {
+  font-family: 'sqbb', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+
+.sqpixels-font {
+  font-family: 'sqpixels', monospace;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.download-btn {
+  background-color: #0f172a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  height: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn:hover {
+  background-color: #1e293b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
